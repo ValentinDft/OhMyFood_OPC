@@ -7,4 +7,10 @@ body {
   font-family: "Shrikhand", cursive;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*# sourceMappingURL=style.css.map */
