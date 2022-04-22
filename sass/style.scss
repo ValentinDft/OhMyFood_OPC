@@ -22,3 +22,40 @@ header{
     @extend %flexbox_center;
 }
 
+.container_grey{
+    @extend %flexbox_center;
+    background-color: darken($grey, 5);
+    box-shadow: 0 -5px 5px rgb(0 0 0 / 20%), 0 0 0px rgb(0 0 0 / 20%)
+}
+
+.container_light_grey{
+    @extend %flexbox_center;
+    flex-direction: column;
+    background-color: $grey;
+    padding: 48px;
+
+    h2, span{
+        text-align: center;
+        margin: 0;
+    }
+    span{
+        margin-top: 5px;
+        margin-bottom: 30px;
+        color: rgb(133, 133, 133);
+    }
+}
+
+.btn{
+    padding: 15px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    background: $primary;
+    background: linear-gradient(162deg, $secondary 17%, $primary 65%);
+    box-shadow: 0 5px 5px rgb(0 0 0 / 20%), 0 0 0px rgb(0 0 0 / 20%);
+
+    &:hover{
+        background: linear-gradient(162deg, lighten($secondary, 5) 17%, lighten($primary, 5) 65%);
+        box-shadow: 0 5px 5px rgb(0 0 0 / 40%), 0 0 0px rgb(0 0 0 / 20%);
+    }
+}

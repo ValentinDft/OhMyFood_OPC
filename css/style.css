@@ -7,10 +7,44 @@ body {
   font-family: "Shrikhand", cursive;
 }
 
-header {
+.container_light_grey, .container_grey, header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.container_grey {
+  background-color: #ebebeb;
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.2), 0 0 0px rgba(0, 0, 0, 0.2);
+}
+
+.container_light_grey {
+  flex-direction: column;
+  background-color: rgb(248, 248, 248);
+  padding: 48px;
+}
+.container_light_grey h2, .container_light_grey span {
+  text-align: center;
+  margin: 0;
+}
+.container_light_grey span {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  color: rgb(133, 133, 133);
+}
+
+.btn {
+  padding: 15px;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  background: #9356DC;
+  background: linear-gradient(162deg, #FF79DA 17%, #9356DC 65%);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2), 0 0 0px rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+  background: linear-gradient(162deg, #ff93e1 17%, #a16be0 65%);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4), 0 0 0px rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=style.css.map */
