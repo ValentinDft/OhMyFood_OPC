@@ -3,31 +3,35 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .title {
   font-family: "Shrikhand", cursive;
 }
 
-.container_light_grey, .container_grey, header {
+.card_onboarding .nb_onboarding, .list, .container_presentation, .container_localisation, header {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.container_grey {
+.container_localisation {
   background-color: #ebebeb;
   box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.2), 0 0 0px rgba(0, 0, 0, 0.2);
 }
 
-.container_light_grey {
+.container_presentation {
   flex-direction: column;
   background-color: rgb(248, 248, 248);
   padding: 48px;
 }
-.container_light_grey h2, .container_light_grey span {
+.container_presentation h2, .container_presentation span {
   text-align: center;
   margin: 0;
 }
-.container_light_grey span {
+.container_presentation span {
   margin-top: 5px;
   margin-bottom: 30px;
   color: rgb(133, 133, 133);
@@ -41,10 +45,60 @@ body {
   background: #9356DC;
   background: linear-gradient(162deg, #FF79DA 17%, #9356DC 65%);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2), 0 0 0px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 1s ease;
 }
 .btn:hover {
   background: linear-gradient(162deg, #ff93e1 17%, #a16be0 65%);
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4), 0 0 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4), 0 0 0px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 45px 20px;
+}
+.container h2 {
+  margin: 0;
+}
+
+.list {
+  flex-direction: column;
+}
+
+.card_onboarding {
+  width: 80%;
+  background-color: rgb(248, 248, 248);
+  padding: 30px;
+  border-radius: 25px;
+  margin-top: 30px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2), 0 0 0px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.8s ease, box-shadow 0.8s ease;
+  display: flex;
+  align-items: center;
+}
+.card_onboarding .contenu_card_onboarding {
+  display: flex;
+  position: relative;
+  right: 40px;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+}
+.card_onboarding .nb_onboarding {
+  background-color: #9356DC;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  color: white;
+}
+.card_onboarding .fa-solid {
+  font-size: 20px;
+  color: #797979;
+}
+.card_onboarding:hover {
+  background-color: #f2eafb;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 0 0px rgba(0, 0, 0, 0.2);
+}
+.card_onboarding:hover .fa-solid {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */

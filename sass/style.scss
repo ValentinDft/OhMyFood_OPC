@@ -3,6 +3,10 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.bold{
+    font-weight: bold;
+}
+
 .title{
     font-family: 'Shrikhand', cursive;
 }
@@ -22,13 +26,13 @@ header{
     @extend %flexbox_center;
 }
 
-.container_grey{
+.container_localisation{
     @extend %flexbox_center;
     background-color: darken($grey, 5);
     box-shadow: 0 -5px 5px rgb(0 0 0 / 20%), 0 0 0px rgb(0 0 0 / 20%)
 }
 
-.container_light_grey{
+.container_presentation{
     @extend %flexbox_center;
     flex-direction: column;
     background-color: $grey;
@@ -53,9 +57,65 @@ header{
     background: $primary;
     background: linear-gradient(162deg, $secondary 17%, $primary 65%);
     box-shadow: 0 5px 5px rgb(0 0 0 / 20%), 0 0 0px rgb(0 0 0 / 20%);
+    transition: box-shadow 1s ease;
 
     &:hover{
         background: linear-gradient(162deg, lighten($secondary, 5) 17%, lighten($primary, 5) 65%);
-        box-shadow: 0 5px 5px rgb(0 0 0 / 40%), 0 0 0px rgb(0 0 0 / 20%);
+        box-shadow: 0 8px 15px rgb(0 0 0 / 40%), 0 0 0px rgb(0 0 0 / 20%);
     }
 }
+
+.container{
+    padding: 45px 20px;
+    h2{
+        margin: 0;
+    }
+}
+
+.list{
+    @extend %flexbox_center;
+    flex-direction: column;
+}
+
+.card_onboarding{
+    width: 80%;
+    background-color: $grey;
+    padding: 30px;
+    border-radius: 25px;
+    margin-top: 30px;
+    box-shadow: 0 5px 5px rgb(0 0 0 / 20%), 0 0 0px rgb(0 0 0 / 20%);
+    transition: background-color .8s ease, box-shadow .8s ease;
+    display: flex;
+    align-items: center;
+
+    .contenu_card_onboarding{
+        display: flex;
+        position: relative;
+        right: 40px;
+        justify-content: space-between;
+        align-items: center;
+        width: 25%;
+    }
+    .nb_onboarding{
+        @extend %flexbox_center;
+        background-color: $primary;
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        color: white;
+    }
+    .fa-solid{
+        font-size: 20px;
+        color: darken($grey, 50);
+    }
+
+    &:hover{
+        background-color: lighten($primary, 35);
+        box-shadow: 0 10px 15px rgb(0 0 0 / 20%), 0 0 0px rgb(0 0 0 / 20%);
+
+        .fa-solid{
+            color: $primary;
+        }
+    }
+}
+
