@@ -1,0 +1,17 @@
+@import "mixin.scss";
+
+.btn__about{
+    padding: 15px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    background: $primary;
+    background: linear-gradient(162deg, $secondary 17%, $primary 65%);
+    @include card-shadow();
+    transition: box-shadow 1s ease;
+
+    &:hover{
+        background: linear-gradient(162deg, lighten($secondary, 5) 17%, lighten($primary, 5) 65%);
+        box-shadow: 0 8px 15px rgb(0 0 0 / 40%), 0 0 0px rgb(0 0 0 / 20%);
+    }
+}

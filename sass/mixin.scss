@@ -1,0 +1,7 @@
+@mixin card-shadow{
+    box-shadow: 0 5px 5px rgb(0 0 0 / 20%), 0 0 0px rgb(0 0 0 / 20%);
+}
+
+@mixin layout-padding{
+    padding: 45px 20px;
+}

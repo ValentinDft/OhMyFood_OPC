@@ -1,0 +1,9 @@
+header{
+    @extend %flexbox_center;
+    padding: 20px;
+}
+
+.title{
+    font-family: 'Shrikhand', cursive;
+    font-weight: 500;
+}

@@ -1,0 +1,68 @@
+.restaurant{
+    @include layout-padding;
+    background-color: $grey;
+    &__list{
+        @extend %flexbox_center;
+        flex-direction: column;
+    
+    }
+    &__card{
+        @include card-shadow();
+        width: 100%;
+        height: 250px;
+        background-color: white;
+        margin-top: 15px;
+        border-radius: 15px;
+        cursor: pointer;
+    
+        &__header{
+            height: 70%;
+        }
+        .img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        &__footer{
+            height: 30%;
+            padding: 0px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p{
+                font-weight: bold;
+                font-size: 18px;
+            }
+            .fa-regular{
+                font-size: 20px;
+                color: darken($grey, 50);
+                // &:hover {
+                //     animation: fill 0.3s ease-in-out;
+                //     display: inline-block;
+                //     opacity: 1;
+                //     background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                //     background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                //     -webkit-background-clip: text;
+                //     -webkit-text-fill-color:transparent;
+                //     font-weight: bold;
+                //   }
+            }
+        }
+        &__badge{
+            @extend %flexbox_center;
+            background-color: $tertiary;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 8px 0px;
+            border-radius: 2px;
+            position: absolute;
+            right: 30px;
+            margin-top: 10px;
+            color: darken($tertiary, 40);
+            width: 70px;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.about{
+    @extend %flexbox_center;
+    flex-direction: column;
+    background-color: $grey;
+    padding: 48px;
+
+    h2, span{
+        text-align: center;
+        font-weight: bold;
+    }
+    span{
+        margin-top: 5px;
+        margin-bottom: 30px;
+        color: rgb(133, 133, 133);
+    }
+}

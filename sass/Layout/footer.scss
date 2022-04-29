@@ -1,0 +1,16 @@
+footer{
+    background-color: $black;
+    padding: 20px;
+    color: darken($grey, 5);
+    li{
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+    .fa-solid{
+        margin-right: 12px;
+        font-size: 12px
+    }
+    a{
+        color: darken($grey, 5);
+    }
+}

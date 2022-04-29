@@ -1,0 +1,48 @@
+.onboarding{
+    @include layout-padding;
+    &__list{
+        @extend %flexbox_center;
+        flex-direction: column;
+    }
+    &__card{
+        width: 80%;
+        background-color: $grey;
+        padding: 30px;
+        border-radius: 25px;
+        margin-top: 30px;
+        @include card-shadow();
+        transition: background-color .8s ease, box-shadow .8s ease;
+        display: flex;
+        align-items: center;
+    
+        &--picto{
+            display: flex;
+            position: relative;
+            right: 40px;
+            justify-content: space-between;
+            align-items: center;
+            width: 25%;
+        }
+        .nb_onboarding{
+            @extend %flexbox_center;
+            background-color: $primary;
+            width: 25px;
+            height: 25px;
+            border-radius: 100%;
+            color: white;
+        }
+        .fa-solid{
+            font-size: 20px;
+            color: darken($grey, 50);
+        }
+    
+        &:hover{
+            background-color: lighten($primary, 35);
+            box-shadow: 0 10px 15px rgb(0 0 0 / 20%), 0 0 0px rgb(0 0 0 / 20%);
+    
+            .fa-solid{
+                color: $primary;
+            }
+        }
+    }
+}
