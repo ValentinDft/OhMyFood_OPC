@@ -1,0 +1,17 @@
+@keyframes loader {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+@keyframes bullet {
+    0% {
+      transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

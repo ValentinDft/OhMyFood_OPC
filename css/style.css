@@ -36,6 +36,22 @@ h1, h2, h3, h4, h5, h6, p {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4), 0 0 0px rgba(0, 0, 0, 0.2);
 }
 
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes bullet {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 header {
   padding: 20px;
 }
@@ -176,6 +192,35 @@ footer a {
   width: 70px;
 }
 
+.loader {
+  background: rgb(248, 248, 248);
+  color: white;
+  -webkit-text-stroke: 1px #2d3436;
+  width: 100%;
+  height: 100%;
+  font-family: Shrikhand, sans-serif;
+  position: fixed;
+  z-index: 9999;
+  animation: loader 2s ease 3s forwards;
+}
+.loader__bullets {
+  display: flex;
+  margin-left: 10px;
+  -webkit-text-stroke: 0px;
+}
+.loader__bullets h1:nth-child(1) {
+  color: #9356DC;
+  animation: bullet 1s ease infinite alternate;
+}
+.loader__bullets h1:nth-child(2) {
+  color: #FF79DA;
+  animation: bullet 1s ease 0.5s infinite alternate;
+}
+.loader__bullets h1:nth-child(3) {
+  color: #99E2D0;
+  animation: bullet 1s ease 1s infinite alternate;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -184,7 +229,7 @@ body {
   font-weight: bold;
 }
 
-.localisation, header, .about, .onboarding__list, .onboarding__card .nb_onboarding, .restaurant__list, .restaurant__card__badge {
+.localisation, header, .about, .onboarding__list, .onboarding__card .nb_onboarding, .restaurant__list, .restaurant__card__badge, .loader {
   display: flex;
   justify-content: center;
   align-items: center;
