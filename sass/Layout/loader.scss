@@ -9,7 +9,7 @@
     position: fixed;
     z-index: 9999;
     pointer-events: none;
-    animation: loader 2s ease 3s forwards;
+    animation: loader 2s ease 1s forwards;
 
     &__bullets{
         display: flex;
