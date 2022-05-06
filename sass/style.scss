@@ -1,8 +1,9 @@
-@import "reset.scss", "variables.scss", "btn.scss", "mixin.scss", "keyframes.scss";
-@import "Layout/header.scss", "Layout/about.scss", "Layout/footer.scss", "Layout/onboarding.scss", "Layout/restaurant.scss", "Layout/loader.scss";
+@import "reset.scss", "variables.scss", "btn.scss", "mixin.scss", "keyframes.scss", "heart.scss";
+@import "Layout/header.scss", "Layout/about.scss", "Layout/footer.scss", "Layout/onboarding.scss", "Layout/restaurant.scss", "Layout/loader.scss", "Layout/menu.scss";
 
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: $grey;
 }
 
 .bold{

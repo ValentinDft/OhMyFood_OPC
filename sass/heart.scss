@@ -1,0 +1,14 @@
+.fa-heart{
+    font-size: 20px;
+    color: darken($grey, 50);
+    cursor: pointer;
+    &:hover {
+        animation: heart 1s ease;
+        background: $primary;
+        background: linear-gradient(162deg, $secondary 17%, $primary 65%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:transparent;
+        font-weight: bold;
+        
+    }
+}

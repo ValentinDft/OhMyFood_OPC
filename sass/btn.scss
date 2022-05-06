@@ -1,6 +1,6 @@
 @import "mixin.scss";
 
-.btn__about{
+.btn{
     padding: 15px;
     border-radius: 50px;
     color: white;
@@ -14,4 +14,10 @@
         background: linear-gradient(162deg, lighten($secondary, 5) 17%, lighten($primary, 5) 65%);
         box-shadow: 0 8px 15px rgb(0 0 0 / 40%), 0 0 0px rgb(0 0 0 / 20%);
     }
+}
+
+.btn_order{
+    @extend .btn; 
+    width: 50%;
+    text-align: center;
 }

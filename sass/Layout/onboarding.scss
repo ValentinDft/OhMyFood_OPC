@@ -1,5 +1,6 @@
 .onboarding{
     @include layout-padding;
+    background-color: white;
     &__list{
         @extend %flexbox_center;
         flex-direction: column;
