@@ -69,6 +69,16 @@ h1, h2, h3, h4, h5, h6, p {
     opacity: 1;
   }
 }
+@keyframes card_menu {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .fa-heart {
   font-size: 20px;
   color: #797979;
@@ -301,6 +311,7 @@ footer a {
   padding: 15px 10px;
   border-radius: 15px;
   margin-bottom: 15px;
+  animation: card_menu 2s ease;
 }
 .main_menu .menu__card .details {
   display: flex;
