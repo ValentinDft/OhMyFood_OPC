@@ -79,6 +79,22 @@ h1, h2, h3, h4, h5, h6, p {
     transform: translateY(0px);
   }
 }
+@keyframes circle_rotate {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes hover_width {
+  0% {
+    width: 5%;
+  }
+  100% {
+    width: 20%;
+  }
+}
 .fa-heart {
   font-size: 20px;
   color: #797979;
@@ -229,6 +245,16 @@ footer a {
   color: #278870;
   width: 70px;
 }
+.restaurant__card .checked_heart {
+  display: none;
+}
+.restaurant__card .checked_heart:checked + label > i {
+  background: #9356DC;
+  background: linear-gradient(162deg, #FF79DA 17%, #9356DC 65%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
 
 .loader {
   background: rgb(248, 248, 248);
@@ -285,6 +311,16 @@ footer a {
   justify-content: space-between;
   align-items: center;
 }
+.main_menu__header .checked_heart {
+  display: none;
+}
+.main_menu__header .checked_heart:checked + label > i {
+  background: #9356DC;
+  background: linear-gradient(162deg, #FF79DA 17%, #9356DC 65%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
 .main_menu__body {
   margin-top: 20px;
 }
@@ -308,20 +344,53 @@ footer a {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2), 0 0 0px rgba(0, 0, 0, 0.2);
   width: 100%;
   background-color: white;
-  padding: 15px 10px;
   border-radius: 15px;
   margin-bottom: 15px;
   animation: card_menu 2s ease;
+  transition: padding-right 450ms ease-in-out;
+  display: flex;
+}
+.main_menu .menu__card .content {
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
 .main_menu .menu__card .details {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.main_menu .menu__card span {
+.main_menu .menu__card .details span {
   font-weight: bold;
 }
-.main_menu .menu__card p {
+.main_menu .menu__card .details p {
   padding-top: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 90%;
+}
+.main_menu .menu__card .add {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 5%;
+  color: white;
+}
+.main_menu .menu__card .add .fa-circle-check {
+  font-size: 24px;
+}
+.main_menu .menu__card:hover .add {
+  display: flex;
+  animation: hover_width 1s ease-in-out;
+  width: 20%;
+}
+.main_menu .menu__card:hover .add .fa-circle-check {
+  animation: circle_rotate 1s ease-in-out;
 }
 .main_menu__footer {
   margin-top: 10%;

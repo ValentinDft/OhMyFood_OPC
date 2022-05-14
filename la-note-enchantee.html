@@ -28,7 +28,8 @@
             <!-- Header menu -->
             <div class="main_menu__header">
                 <h1 class="title">La note enchantée</h1>
-                <i class="fa-regular fa-heart"></i>
+                <input type="checkbox" id="btnControl" class="checked_heart"/>
+                <label for="btnControl"><i class="fa-regular fa-heart"></i></label>
             </div>
 
             <div class="main_menu__body">
@@ -43,31 +44,54 @@
                     <div class="menu__list">
 
                         <div class="menu__card">
-                            <h3>Ravioles de foie gras </h3>
-                            <div class="details">
-                                <p>Accompagnés de leur crème à la truffe</p>
-                                <span>25€</span>
+                            <div class="content">
+                                <h3>Ravioles de foie gras </h3>
+                                <div class="details">
+                                    <p>Accompagnés de leur crème à la truffe</p>
+                                    <span>25€</span>
+                                </div>
+                            </div>
+                            
+                            <div class="add">
+                                <i class="fa-solid fa-circle-check"></i>
                             </div>
                         </div>
                         <div class="menu__card">
-                            <h3>Caviar osciètre </h3>
-                            <div class="details">
-                                <p>Sur blini à la farine de blé noir</p>
-                                <span>35€</span>
+                            <div class="content">
+                                <h3>Caviar osciètre </h3>
+                                <div class="details">
+                                    <p>Sur blini à la farine de blé noir</p>
+                                    <span>35€</span>
+                                </div>
+                            </div>
+
+                            <div class="add">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>  
+                        </div>
+                        <div class="menu__card">
+                            <div class="content">
+                                <h3>Homard et espuma de potiron</h3>
+                                <div class="details">
+                                    <p>Mariné aux zestes d'orange</p>
+                                    <span>20€</span>
+                                </div>
+                            </div>
+                            <div class="add">
+                                <i class="fa-solid fa-circle-check"></i>
                             </div>
                         </div>
                         <div class="menu__card">
-                            <h3>Homard et espuma de potiron</h3>
-                            <div class="details">
-                                <p>Mariné aux zestes d'orange</p>
-                                <span>20€</span>
+                            <div class="content">
+                                <h3>Foie gras de canard cuit entier</h3>
+                                <div class="details">
+                                    <p>Confiture de figue et pain toasté</p>
+                                    <span>35€</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="menu__card">
-                            <h3>Foie gras de canard cuit entier</h3>
-                            <div class="details">
-                                <p>Confiture de figue et pain toasté</p>
-                                <span>35€</span>
+
+                            <div class="add">
+                                <i class="fa-solid fa-circle-check"></i>
                             </div>
                         </div>
 
@@ -84,25 +108,41 @@
                     <div class="menu__list">
 
                         <div class="menu__card">
-                            <h3>Noix de coquilles Saint-Jacques</h3>
-                            <div class="details">
-                                <p>Sur lit de purée de céleri-rave</p>
-                                <span>40€</span>
+                            <div class="content">   
+                                <h3>Noix de coquilles Saint-Jacques</h3>
+                                <div class="details">
+                                    <p>Sur lit de purée de céleri-rave</p>
+                                    <span>40€</span>
+                                </div>
+                            </div>
+                            <div class="add">
+                                <i class="fa-solid fa-circle-check"></i>
                             </div>
                         </div>
                         <div class="menu__card">
-                            <h3>Langoustine poêlée</h3>
-                            <div class="details">
-                                <p>Purée de patate douce</p>
-                                <span>35€</span>
+                            <div class="content">
+                                <h3>Langoustine poêlée</h3>
+                                <div class="details">
+                                    <p>Purée de patate douce</p>
+                                    <span>35€</span>
+                                </div>
+                            </div>
+                            <div class="add">
+                                <i class="fa-solid fa-circle-check"></i>
                             </div>
                         </div>
                         
                         <div class="menu__card">
-                            <h3>Mijoté de queue de boeuf </h3>
-                            <div class="details">
-                                <p>Et riz sauvage aux zestes de citron</p>
-                                <span>44€</span>
+                            <div class="content">
+                                <h3>Mijoté de queue de boeuf </h3>
+                                <div class="details">
+                                    <p>Et riz sauvage aux zestes de citron</p>
+                                    <span>44€</span>
+                                </div>
+                            </div>
+
+                            <div class="add">
+                                <i class="fa-solid fa-circle-check"></i>
                             </div>
                         </div>
 
@@ -119,25 +159,41 @@
                     <div class="menu__list">
 
                         <div class="menu__card">
-                            <h3>Macaron noisette et chocolat</h3>
-                            <div class="details">
-                                <p>Glace au caramel brun et sel de Guérande</p>
-                                <span>18€</span>
+                            <div class="content">
+                                <h3>Macaron noisette et chocolat</h3>
+                                <div class="details">
+                                    <p>Glace au caramel brun et sel de Guérande</p>
+                                    <span>18€</span>
+                                </div>
+                            </div>
+                            <div class="add">
+                                <i class="fa-solid fa-circle-check"></i>
                             </div>
                         </div>
                         <div class="menu__card">
-                            <h3>Baba au rhum revisité </h3>
-                            <div class="details">
-                                <p>Avec son coulis de citron</p>
-                                <span>22€</span>
+                            <div class="content">
+                                <h3>Baba au rhum revisité </h3>
+                                <div class="details">
+                                    <p>Avec son coulis de citron</p>
+                                    <span>22€</span>
+                                </div>
+                            </div>
+
+                            <div class="add">
+                                <i class="fa-solid fa-circle-check"></i>
                             </div>
                         </div>
                         
                         <div class="menu__card">
-                            <h3>Tarte au citron meringuée </h3>
-                            <div class="details">
-                                <p>Déstructurée</p>
-                                <span>23€</span>
+                            <div class="content">
+                                <h3>Tarte au citron meringuée </h3>
+                                <div class="details">
+                                    <p>Déstructurée</p>
+                                    <span>23€</span>
+                                </div>
+                            </div>
+                            <div class="add">
+                                <i class="fa-solid fa-circle-check"></i>
                             </div>
                         </div>
 
