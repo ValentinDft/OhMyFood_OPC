@@ -109,6 +109,31 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: bold;
 }
 
+@media screen and (min-width: 1024px) {
+  .onboarding__list {
+    justify-content: space-around !important;
+    flex-direction: row !important;
+  }
+  .onboarding__card {
+    width: 25% !important;
+  }
+
+  .restaurant__list {
+    justify-content: space-around !important;
+    flex-direction: row !important;
+  }
+  .restaurant__card {
+    width: 24% !important;
+  }
+
+  .main_menu {
+    padding: 20px 60px !important;
+  }
+
+  .menu__card {
+    width: 80% !important;
+  }
+}
 header {
   padding: 20px;
 }
