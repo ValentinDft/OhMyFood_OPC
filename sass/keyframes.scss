@@ -57,3 +57,12 @@
     width: 20%;
   }
 }
+
+@keyframes reduce_content {
+  0% {
+    width: 90%;
+  }
+  100% {
+    width: 80%;
+  }
+}

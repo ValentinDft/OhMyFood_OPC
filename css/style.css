@@ -95,6 +95,14 @@ h1, h2, h3, h4, h5, h6, p {
     width: 20%;
   }
 }
+@keyframes reduce_content {
+  0% {
+    width: 90%;
+  }
+  100% {
+    width: 80%;
+  }
+}
 .fa-heart {
   font-size: 20px;
   color: #797979;
@@ -132,6 +140,10 @@ h1, h2, h3, h4, h5, h6, p {
 
   .menu__card {
     width: 80% !important;
+  }
+  .menu__card:hover .content {
+    animation: none !important;
+    width: 100% !important;
   }
 }
 header {
@@ -382,6 +394,12 @@ footer a {
   justify-content: space-between;
   width: 100%;
 }
+.main_menu .menu__card .content h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 90%;
+}
 .main_menu .menu__card .details {
   display: flex;
   justify-content: space-between;
@@ -392,9 +410,6 @@ footer a {
 }
 .main_menu .menu__card .details p {
   padding-top: 5px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  width: 90%;
 }
 .main_menu .menu__card .add {
   display: none;
@@ -416,6 +431,16 @@ footer a {
 }
 .main_menu .menu__card:hover .add .fa-circle-check {
   animation: circle_rotate 1s ease-in-out;
+}
+.main_menu .menu__card:hover .details p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 80%;
+}
+.main_menu .menu__card:hover .content {
+  animation: reduce_content 1s ease-in-out;
+  width: 80%;
 }
 .main_menu__footer {
   margin-top: 10%;

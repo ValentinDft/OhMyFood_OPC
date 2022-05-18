@@ -23,6 +23,10 @@
     .menu{
         &__card{
             width: 80% !important;
+            &:hover .content{   
+                animation: none !important;
+                width: 100% !important;
+            }
         }
         
     }
