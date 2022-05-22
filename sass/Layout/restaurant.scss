@@ -9,13 +9,14 @@
     &__card{
         @include card-shadow();
         width: 100%;
-        height: 250px;
+        height: 200px;
         background-color: white;
         margin-top: 15px;
         border-radius: 15px;
         cursor: pointer;
     
         &__header{
+            position: relative;
             height: 70%;
         }
         .img{
@@ -45,7 +46,7 @@
             padding: 8px 0px;
             border-radius: 2px;
             position: absolute;
-            right: 30px;
+            right: 20px;
             margin-top: 10px;
             color: darken($tertiary, 40);
             width: 70px;

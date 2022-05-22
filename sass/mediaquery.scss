@@ -16,13 +16,13 @@
         &__card{
             width: 24% !important;
         }
+        
     }
     .main_menu{
         padding: 20px 60px !important;
     }
     .menu{
         &__card{
-            width: 80% !important;
             &:hover .content{   
                 animation: none !important;
                 width: 100% !important;
@@ -30,4 +30,16 @@
         }
         
     }
- }
+}
+
+@media screen and (min-width: 425px) { 
+    .menu{
+        &__card{
+            &:hover .content{   
+                animation: none !important;
+                width: 100% !important;
+            }
+        }
+        
+    }
+}

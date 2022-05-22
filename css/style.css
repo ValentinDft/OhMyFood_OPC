@@ -138,9 +138,12 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 20px 60px !important;
   }
 
-  .menu__card {
-    width: 80% !important;
+  .menu__card:hover .content {
+    animation: none !important;
+    width: 100% !important;
   }
+}
+@media screen and (min-width: 425px) {
   .menu__card:hover .content {
     animation: none !important;
     width: 100% !important;
@@ -242,13 +245,14 @@ footer a {
 .restaurant__card {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2), 0 0 0px rgba(0, 0, 0, 0.2);
   width: 100%;
-  height: 250px;
+  height: 200px;
   background-color: white;
   margin-top: 15px;
   border-radius: 15px;
   cursor: pointer;
 }
 .restaurant__card__header {
+  position: relative;
   height: 70%;
 }
 .restaurant__card .img {
@@ -277,7 +281,7 @@ footer a {
   padding: 8px 0px;
   border-radius: 2px;
   position: absolute;
-  right: 30px;
+  right: 20px;
   margin-top: 10px;
   color: #278870;
   width: 70px;
