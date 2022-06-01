@@ -51,15 +51,5 @@
             color: darken($tertiary, 40);
             width: 70px;
         }
-        .checked_heart {
-            display: none;
-        }
-        .checked_heart:checked + label > i {
-            background: $primary;
-            background: linear-gradient(162deg, $secondary 17%, $primary 65%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color:transparent;
-            font-weight: bold;
-        }
     }
 }

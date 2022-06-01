@@ -286,16 +286,6 @@ footer a {
   color: #278870;
   width: 70px;
 }
-.restaurant__card .checked_heart {
-  display: none;
-}
-.restaurant__card .checked_heart:checked + label > i {
-  background: #9356DC;
-  background: linear-gradient(162deg, #FF79DA 17%, #9356DC 65%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-}
 
 .loader {
   background: rgb(248, 248, 248);
